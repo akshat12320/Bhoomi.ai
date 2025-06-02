@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoomi.ai | Empowering Indian Agriculture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f4f9f4;
+            color: #2d2d2d;
+        }
+        header {
+            background-color: #2b7a0b;
+            padding: 20px 40px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2em;
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 2px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #d4f5d4;
+            transform: scale(1.1);
+        }
+        .hero {
+            padding: 80px 40px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600334129128-010e3d7a9b03?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3em;
+        }
+        .section {
+            padding: 80px 40px;
+        }
+        .section h3 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #2b7a0b;
+            border-bottom: 3px solid #2b7a0b;
+            display: inline-block;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .cta {
+            background-color: #dff6dd;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .cta h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta button {
+            background-color: #2b7a0b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #256306;
+        }
+        footer {
+            background-color: #1e4d07;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .founder-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .founder-section img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .founder-section div {
+            flex: 1;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bhoomi.ai</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#founder">Founder</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h2>Transforming Indian Agriculture with AI</h2>
+        <p>Smart land surveying, crop planning, and full supply chain support.</p>
+    </div>
+    <section class="section" id="about">
+        <h3>About Bhoomi.ai</h3>
+        <p>Bhoomi.ai is revolutionizing the Indian agriculture landscape by using cutting-edge artificial intelligence to empower farmers. Based in Bhopal, our mission is to improve farmer incomes through scientific land assessment, optimized crop recommendations, and seamless supply chain management. We also offer land leasing solutions to enhance productivity and access for all.</p>
+    </section>
+    <section class="section" id="services">
+        <h3>Our Services</h3>
+        <div class="features">
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?satellite,agriculture&sig=1" alt="AI Land Surveying">
+                <h4>AI Land Surveying</h4>
+                <p>We use satellite imagery and AI models to assess soil health, water access, and terrain for precise land evaluation.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?farming,crops&sig=2" alt="Crop Planning">
+                <h4>Crop Planning & Profit Optimization</h4>
+                <p>Get tailored crop recommendations that maximize yield and profitability based on soil type, season, and demand trends.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?supplychain,logistics&sig=3" alt="Supply Chain">
+                <h4>End-to-End Supply Chain</h4>
+                <p>We support farmers through the entire supply chain—from harvesting and storage to transportation and market access.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/400x300/?farm,lease&sig=4" alt="Land Leasing">
+                <h4>Land Leasing Platform</h4>
+                <p>Our leasing platform connects landowners and tenant farmers to ensure optimal land use and improved access to resources.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="founder">
+        <h3>Founder</h3>
+        <div class="founder-section">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHvC-jXjZsZhw/profile-displayphoto-shrink_400_400/0/1710412307616?e=1722470400&v=beta&t=mjTkHNjYjzBhA0-uykMBRVNkUjEK7PtyeDEzYx-0kg4" alt="Akshat Founder Photo">
+            <div>
+                <p><strong>Akshat</strong> is the visionary behind Bhoomi.ai. With a passion for leveraging technology to solve real-world problems, Akshat aims to bring AI-driven solutions to empower India's agricultural community and transform rural livelihoods.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h3>Ready to Revolutionize Your Farm?</h3>
+        <p>Join thousands of Indian farmers using Bhoomi.ai to boost productivity and profits.</p>
+        <button onclick="location.href='#contact'">Get in Touch</button>
+    </section>
+    <section class="section" id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: contact@bhoomi.ai</p>
+        <p>Phone: +91-9425011711</p>
+        <p>Location: Bhopal, India</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Bhoomi.ai</p>
+        <p>Empowering Farmers. Enriching Agriculture.</p>
+    </footer>
+</body>
+</html>
